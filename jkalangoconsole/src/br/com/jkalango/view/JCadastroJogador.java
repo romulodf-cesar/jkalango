@@ -30,15 +30,22 @@ public class JCadastroJogador extends JFrame{
        add(txtNome);
        JButton btnCadastrar = new JButton("Cadastrar");
        btnCadastrar.addActionListener(new ActionListener(){
-
+       
         @Override
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
-            JOptionPane.showMessageDialog(null,"Jogador cadastrado com sucesso!");        
+            String nome = txtNome.getText();
+            if(nome == null || nome.trim().isEmpty()){
+                JOptionPane.showMessageDialog(null,"o campo não pode ser vazio ou nullo","Erro no Sistema", JOptionPane.ERROR_MESSAGE);
+            }else{
+                //NovoJogador jogador = new NovoJogador(nome);
+                JOptionPane.showMessageDialog(null,"Parabéns! Por participar do JKalango Community","Sistema ok",JOptionPane.INFORMATION_MESSAGE); 
+            }  
         
         }
         
        });
+       add(btnCadastrar);
        setVisible(true);
     }
     
