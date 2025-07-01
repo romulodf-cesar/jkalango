@@ -6,7 +6,7 @@ public class JMissaoObjeto extends JFrame implements IColor {
 
      @Override
      public void mudarFundo() {
-          // TODO Auto-generated method stub
+          // coloque a mecânica do jogo aqui!
           throw new UnsupportedOperationException("Unimplemented method 'mudarFundo'");
      }
 

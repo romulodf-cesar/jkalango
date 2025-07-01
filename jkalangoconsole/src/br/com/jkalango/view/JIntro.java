@@ -64,8 +64,9 @@ public class JIntro extends JFrame {
         iniciarMissaoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Ao clicar, mostra a mensagem "Primeira Missão Iniciada"
-                JOptionPane.showMessageDialog(JIntro.this, "Primeira Missão Iniciada");
+                new JCadastroJogador();
+                dispose();//libera recursos da JIntro.
+
               
             }
         });
